@@ -15,3 +15,5 @@ Innlogging bør gjøres med et skikkelig system for å holde styr på den enkelt
 Jeg har brukt en tråd som venter i noen minutter, før den setter verdien tilbake til False, så etter en stund må brukeren logge inn på nytt. 
 
 
+	**Nettsiden**
+Etter innlogging, kan brukeren trykke på knapper for å generere fakta, bilder av hunder og forslag til gjøremål. Dette er for å teste ut grunnleggende react (HTTP-requests). 
