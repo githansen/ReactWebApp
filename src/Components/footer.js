@@ -14,7 +14,7 @@ export const Footer =()=>
                 <Row>
                     <Col sm={6}>
                         <h5 className="text-uppercase">Footer Content</h5>
-                        <p>Here you can use rows and columns to organize your footer content.</p>
+                        <p>.... fyll inn tekst her</p>
                 </Col>
                     <Col sm={3}>
                         <h5 className="text-uppercase">Links</h5>
