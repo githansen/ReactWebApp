@@ -3,7 +3,9 @@
 												               											
 Koden i dette repoet er laget på 1 dag for å gjøre meg selv kjent med React -> En enkel side med registrering, innlogging, og et par funksjoner i hjem-siden som kun er tilgjengelig dersom man logger inn på riktig vis. Systemet kan sjekke brukernavn og passord, men ikke håndtere flere samtidige brukere. En mer riktig innloggingsløsning vil komme etterhvert, foreløpig er dette kun en start. 
 
-
+**REST API** 
+https://github.com/Githansen/SpringServerReactAPI 
+Sjekk serverkode ^^ 
 
       **Registrering**
 Inputvalidering er implementert, ellers er det en relativt simpel løsning 
