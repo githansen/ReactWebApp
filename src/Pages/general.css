@@ -1,0 +1,28 @@
+.tabell table{
+    border: 12px solid;
+    background-color: lightgreen;
+    width:50%;
+}
+button{
+    margin-top:20px;
+    width:50%;
+    content-align:center;
+}
+#usernameerror{
+    color:red;
+}
+#passworderror{
+    color:red;
+}
+#emailerror{
+    color:red;
+}
+.tabell2 table{
+    border: 12px solid;
+    background-color: lightblue;
+    padding: 10px;
+}
+img {
+    height: 300px;
+    width: 500px;
+}
