@@ -20,9 +20,9 @@ function validateemail(email){
 
 }
 function validateuser(username){
-let regexp = new RegExp("[a-zA-Z\\-]")
+let regexp = new RegExp("[a-zA-Z0-9]")
     if(!regexp.test(username)){
-        $("#usernameerror").html("Numbers and letters only")
+        $("#usernameerror").html("Kun tall og bokstaver")
         return false;
     }
     else{
@@ -65,9 +65,18 @@ function registrer(){
             }
         });
 }
-
-
-
+function handleuserChange(event){
+    const funksjon = event.target.id
+    if(funksjon==='username'){
+        validateuser(event.target.value)
+    }
+    else if(funksjon === 'password'){
+        validatepassword(event.target.value)
+    }
+    else{
+        validateemail(event.target.value)
+    }
+}
 export const Register=()=>{
     return(
         <div className={'general'}>
@@ -90,7 +99,7 @@ export const Register=()=>{
                     </tr>
                 <tr>
                     <td>
-                <input type={'text'} id={'username'}></input>
+                <input type={'text'} id={'username'} onChange={handleuserChange}></input>
                     </td>
                     <td>
                         <div id={'usernameerror'}></div>
@@ -103,7 +112,7 @@ export const Register=()=>{
                     </tr>
                 <tr>
                     <td>
-                <input type={'text'} id={'password'}></input>
+                <input type={'text'} id={'password'} onChange={handleuserChange}></input>
                     </td>
                     <td>
                         <div id={'passworderror'}></div>
@@ -116,7 +125,7 @@ export const Register=()=>{
                 </tr>
                 <tr>
                     <td>
-                <input type={'text'} id={'email'}></input>
+                <input type={'text'} id={'email'} onChange={handleuserChange}></input>
                     </td>
                     <td>
                         <div id={'emailerror'}></div>
